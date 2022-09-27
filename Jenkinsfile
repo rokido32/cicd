@@ -1,9 +1,9 @@
-currentBuild.displayName = $BRANCH_NAME
 pipeline {
     agent any
     stages {
         stage('build') {
             steps {
+                setBuildName()
                 test()
                 sh 'pwd'
                 sh 'mvn package'
