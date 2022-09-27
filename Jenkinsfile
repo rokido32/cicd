@@ -1,4 +1,4 @@
-currentBuild.displayName = "test"
+currentBuild.displayName = $BRANCH_NAME
 pipeline {
     agent any
     stages {
