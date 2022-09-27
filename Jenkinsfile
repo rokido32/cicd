@@ -5,6 +5,7 @@ pipeline {
             steps {
                 test()
                 sh 'pwd'
+                sh 'mvn package'
             }
         }
 //         stage('build') {
