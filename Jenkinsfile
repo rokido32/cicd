@@ -5,7 +5,6 @@ pipeline {
             steps {
                 test()
                 sh 'pwd'
-                sh 'mvn -f /Users/roi/.jenkins/workspace/my-test_main/pom.xml package'
             }
         }
 //         stage('build') {
